@@ -1,7 +1,28 @@
 # Licensing
  PLEASE NOTE BEFORE DOWNLOADING: THIS SOFTWARE HAS BEEN LICENSED TO NOUS IMAGING, INC. ON A COMMERCIAL NON-EXCLUSIVE BASIS.  
  IF YOU DOWNLOAD THIS SOFTWARE, NOUS WILL HAVE ACCESS TO YOUR NAME, EMAIL ADDRESS, AND OTHER INFORMATION WHICH YOU PROVIDE TO GITHUB AND NOUS MAY CONTACT YOU REGARDING THEIR PRODUCTS AND SERVICES
- 
+
+# Fork info
+This fork adds files to enable running NORDIC with the MATLAB Compile Runtime (MCR).
+
+## Compiling the MCR binary
+
+To compile NORDIC to a standalone MCR binary, go to the root of this repo and run:
+
+```
+matlab -nojvm -r 'compile_nordic_to_mcr; quit;'
+```
+
+This will create the MCR output in the `NORDIC_MCR` folder.
+
+## Running the binary.
+
+Download the appropriate [MATLAB Compile Runtime](https://www.mathworks.com/products/compiler/matlab-runtime.html) for your MATLAB version and use the `.sh` script:
+
+```
+run_NORDIC_main.sh [path_to_mcr_runtime] [mag_file] [phase_file] [base_output_name_no_extension] [number of noise frames]
+
+```
 
 # NORDIC_Raw
 Matlab code for performing image reconstruction in MRI and performing the NORDIC denoising.
