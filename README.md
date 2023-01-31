@@ -20,8 +20,7 @@ This will create the MCR output in the `NORDIC_MCR` folder.
 Download the appropriate [MATLAB Compile Runtime](https://www.mathworks.com/products/compiler/matlab-runtime.html) for your MATLAB version and use the `.sh` script:
 
 ```
-run_NORDIC_main.sh [path_to_mcr_runtime] [mag_file] [phase_file] [base_output_name_no_extension] [number of noise frames]
-
+run_NORDIC_main.sh [path_to_mcr_runtime] [mag_file] [phase_file] [base_output_name_no_extension] [number of noise frames] [number of threads]
 ```
 
 # NORDIC_Raw
